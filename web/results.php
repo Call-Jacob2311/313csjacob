@@ -2,6 +2,7 @@
 $name = htmlspecialchars($_POST["name"]);
 $email = htmlspecialchars($_POST["email"]);
 $major = htmlspecialchars($_POST["major"]);
+$places = htmlspecialchars($_POST["places"]);
 $comments = htmlspecialchars($_POST["comments"]);
 
 ?>
@@ -19,6 +20,7 @@ $comments = htmlspecialchars($_POST["comments"]);
         <p>Email: <?=$email ?></p>
         <p>Major: <?=$major ?></p>
         <p>Comments: <?=$comments ?></p>
+        <p>Places: <?=$places ?></p>
     </body>
     
     
