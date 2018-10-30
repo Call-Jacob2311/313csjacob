@@ -24,4 +24,4 @@ E-mail: <input type="text" name="email"><br>
 <input type="submit">
 </form>
 
-<button type="button" value="submit" onclick="window.location.href='addUser.php'"/>
+<button type="button" value="submit" onclick="window.location.href='addPatient.php'" placeholder="Add New Patient"/>
