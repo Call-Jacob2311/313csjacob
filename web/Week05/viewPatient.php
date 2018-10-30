@@ -3,7 +3,7 @@ require_once 'library/connection.php';
 foreach ($db->query('SELECT lastname, firstname, id FROM patients') as $row)
 {
   echo 'Name: ' . $row['firstname'] . ' ' . $row['lastname'];
-  echo '<a href="patients.php?id="' . $row['ID'] . '">Edit</a>';
+  echo '<a href="patients.php?id="' . $row['id'] . '">Edit</a>';
   echo '<br/><br/>';
 }
 ?>
