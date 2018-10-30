@@ -1,9 +1,9 @@
 <?php
 require_once 'library/connection.php';
-
-foreach ($db->query('SELECT lastname, firstname, ID FROM patients') as $row)
+foreach ($db->query('SELECT lastname, firstname, id FROM patients') as $row)
 {
-  echo 'Name: ' . $row['firstname'] . ' ' . $row['lastname'] . '        <a href="patient.php" value="' . $row[ID] . '">Click me!</a>';
+  echo 'Name: ' . $row['firstname'] . ' ' . $row['lastname'];
+  echo '<a href="patients.php?id="' . $row['ID'] . '">Edit</a>';
   echo '<br/><br/>';
 }
 ?>
