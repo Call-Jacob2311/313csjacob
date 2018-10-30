@@ -9,9 +9,5 @@ $stmt = $db->prepare('SELECT lastname, firstname FROM patients WHERE lastname=:l
 $stmt->bindValue(':lastName', $lastName, PDO::PARAM_STR);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-foreach ($stmt as $row)
-{
-  echo 'first name: ' . $row['firstname'] . '</br>';
-  echo 'last name: ' . $row['lastname'] . '</br>';
-  echo '<br/><br/>';
-}
+
+echo $rows;
