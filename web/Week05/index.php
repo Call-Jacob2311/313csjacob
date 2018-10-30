@@ -7,10 +7,10 @@ session_start();
 // Get the database connection file
 require_once 'library/connection.php';
 
-foreach ($db->query('SELECT lastName, firstName, email FROM users') as $row)
+foreach ($db->query('SELECT lastname, firstname, email FROM users') as $row)
 {
-  echo 'first name: ' . $row['firstName'];
-  echo 'last name: ' . $row['lastName'];
+  echo 'first name: ' . $row['firstname'];
+  echo 'last name: ' . $row['lastname'];
   echo 'email: ' . $row['email'];
   echo '<br/>';
 }
