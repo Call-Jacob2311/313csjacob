@@ -18,5 +18,10 @@ $stmt->bindValue(':address', $address, PDO::PARAM_STR);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo '<h3>You have successfully submitted your patient record!</h3></br></br>' . 'Your patient ' . $firstName . ' ' . $lastName . ' Has been added to the database!'
+echo '<h3>You have successfully submitted your patient record!</h3></br></br>' . 'Your patient ' . $firstName . ' ' . $lastName . ' has been added to the database!'
 ?>
+
+</br>
+</br>
+<button type="button" value="Click on Me!!" onclick="window.location.href='addPatient.php'">Add another patient</button>
+<button type="button" value="Click on Me!!" onclick="window.location.href='index.php'">Return home</button>

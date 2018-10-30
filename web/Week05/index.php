@@ -19,4 +19,4 @@ foreach ($db->query('SELECT lastname, firstname, email FROM users') as $row)
 
 
 
-<button type="button" value="Click on Me!!" onclick="window.location.href='addPatient.php'"/>
+<button type="button" value="Click on Me!!" onclick="window.location.href='addPatient.php'">Add new patient</button>
