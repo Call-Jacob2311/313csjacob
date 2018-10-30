@@ -10,6 +10,7 @@ $stmt->bindValue(':lastName', $lastName, PDO::PARAM_STR);
 $stmt->execute();
 
 while ($rows = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    echo 'First name: ' . $rows['firstname'] . $rows['lastname'] . '</br>';
+    echo 'First name: ' . $rows['firstname'] . '</br>';
+    echo 'Last name: ' . $rows['lastname'] . '</br></br>'; 
 }
 
