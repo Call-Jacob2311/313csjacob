@@ -27,4 +27,4 @@ foreach ($db->query('SELECT lastname, firstname, email FROM users') as $row)
 </br>
 <button type="button" value="submit" onclick="window.location.href='searchPatient.php'">Search for a patient</button>
 </br>
-<button type="button" value="submit" onclick="window.location.href='viwwPatients.php'">View all patients</button>
+<button type="button" value="submit" onclick="window.location.href='viewPatients.php'">View all patients</button>
