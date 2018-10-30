@@ -1,10 +1,3 @@
-<?php
-
-// Get the database connection file
-require_once 'library/connection.php';
-
-?>
-
 <form action="confirmation.php" method="post">
 First Name: <input type="text" name="firstname"><br>
 Last Name: <input type="text" name="lastname"><br>
