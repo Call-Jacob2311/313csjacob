@@ -32,8 +32,12 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <h2>Thank you for adding a game!</h2>
                 <div class="btn-container">
                     <?php
-                        echo '<span>You have added: ' . $title . ' to the database! </span><br>'
+                        echo '<span>You have added: ' . $title . ' to the database! </span><br><br>'
                     ?>
+                    <button type="button" value="submit" class="button" onclick="window.location.href='addGame.php'">Add another Game</button>
+                    <br>
+                    <br>
+                    <button type="button" value="submit" class="button" onclick="window.location.href='index.php'">Go Home</button>
                 </div>
             </div>
 
