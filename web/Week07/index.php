@@ -8,7 +8,7 @@
     <body>
         <div class="container">
             <header>
-                <h1>GamerBase</h1>
+                <h1 onclick="window.location.href='index.php'">GamerBase</h1>
             </header>
 
             <div id="home">

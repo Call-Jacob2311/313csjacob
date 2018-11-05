@@ -8,7 +8,7 @@
     <body>
         <div class="container">
             <header>
-                <h1>GamerBase</h1>
+                <h1 onclick="window.location.href='index.php'">GamerBase</h1>
             </header>
 
             <div id="home">
@@ -21,7 +21,7 @@
                         <input type="radio" name="status" value="playing"> Playing<br>
                         <input type="radio" name="status" value="to do"> To Do<br> 
                         Please choose a rating (1-10): <input type="number" name="rating" min="1" max="10"><br>
-                        <input type="reset" value="Reset">
+                        <input type="reset" value="Reset" class="button">
                         <br>
                         <input type="submit" class="button">
                     </form>
