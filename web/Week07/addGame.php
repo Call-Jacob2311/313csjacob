@@ -21,7 +21,7 @@
                         <input type="radio" name="status" value="playing"> Playing<br>
                         <input type="radio" name="status" value="to do"> To Do<br> 
                         Please choose a rating (1-10): <input type="number" name="rating" min="1" max="10"><br>
-                        <input type="submit">
+                        <input type="submit" class="button">
                     </form>
                 </div>
             </div>
