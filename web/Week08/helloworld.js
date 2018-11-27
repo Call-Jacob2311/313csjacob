@@ -1,10 +1,13 @@
 const http = require('http');
 
-const hostname = 'ec2-50-17-194-186.compute-1.amazonaws.com';
-const port = 5432;
+const hostname = 'localhost';
+const port = 8888;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
+  if (res.statusCode == 400) {return console.error(error)};
+  if (req == "/home") {return };
+  if (req == "/getData") {return };
   res.setHeader('Content-Type', 'text/plain');
   res.end('Hello World\n');
 });
